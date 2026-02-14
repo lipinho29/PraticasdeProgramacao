@@ -1,0 +1,56 @@
+<!DOCTYPE html>	
+<html>
+    <head>
+        <title>Arrays</title>
+        <meta charset="utf-8">
+
+        <script>
+
+            const carros = [
+                'Fusca', 
+                'Brasília', 
+                'Chevette', 
+                'Opala'
+            ];
+
+            carros.push('Corcel');
+            carros.unshift('Maverick');
+
+            /*
+            splice serve para:
+
+            Excluir itens  a partir de uma posição
+            ex: carros.splice(2,3) - > exclui 3 itens a partir da posição 2
+
+            Inserir itens a partir de uma posição
+            ex: carros.splice(3, 0, 'Uno') - > adiciona o item 'Uno' na posição 3
+
+            Alterar itens a partir de uma posição
+            ex: carros.splice(1, 1, 'Uno') - > altera o item na posição 1 para 'Uno'
+            */
+
+            carros.splice(1, 0, 'Uno');
+            console.table(carros);
+
+            carros.sort()
+            console.table(carros);
+/*
+            for(let elemento of carros){
+                console.log(elemento);
+            }
+
+            for(let i = 0; i < 4; i++){
+                console.log(carros[i]);
+            }
+
+            const carro = carros.pop();
+            carros.shift();
+            console.table(carro);
+*/
+        </script>
+    </head>
+    <body>
+        
+
+    </body>
+</html>

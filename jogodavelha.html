@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Jogo da Velha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script type="text/javascript" src="js/jogoDaVelha.js"></script>
+
+    </head>
+    <body onload="iniciar()">
+
+        <div id="board">
+
+<!--
+           <table cellpadding = "10" border="1">
+                <tr>
+                    <td>Linha 0 Coluna 0</td>
+                    <td>Linha 0 Coluna 1</td>
+                    <td>Linha 0 Coluna 2</td>
+                </tr>
+                <tr>
+                    <td>Linha 1 Coluna 0</td>
+                    <td>Linha 1 Coluna 1</td>
+                    <td>Linha 1 Coluna 2</td>
+                </tr>
+                <tr>
+                    <td>Linha 2 Coluna 0</td>
+                    <td>Linha 2 Coluna 1</td>
+                    <td>Linha 2 Coluna 2</td>
+                </tr>
+
+
+            </table>
+-->
+
+        </div><br>
+
+        Linha: <input type="number" min ="1" max="3" id="Linha" placeholder="1-3">
+        Coluna: <input type="number" min ="1" max="3" id="Coluna" placeholder="1-3"><br><br>
+
+        <button onclick="jogar()">Marcar</button> <button onclick="Reiniciar()">Recomeçar</button><br><br>
+
+        <div id="aviso">Vez do jogador: 1</div>
+
+    </body>
+</html>
